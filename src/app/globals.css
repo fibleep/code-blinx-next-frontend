@@ -2,19 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-  *::-webkit-scrollbar {
-  width: 5px;
-}
+@layer base {
+	*::-webkit-scrollbar {
+		width: 5px;
+	}
 
-*::-webkit-scrollbar-track {
-  background: #170730;
-  border-radius: 5px;
-}
+	*::-webkit-scrollbar-track {
+		background: #170730;
+		border-radius: 5px;
+	}
 
-*::-webkit-scrollbar-thumb {
-  background-color: #1473C1;
-}
+	*::-webkit-scrollbar-thumb {
+		background-color: #1473c1;
+	}
 }
 
 @layer components {
@@ -26,6 +26,20 @@
 	@keyframes blink {
 		50% {
 			opacity: 0;
+		}
+	}
+	.animate-slide-in {
+		animation: 1s ease-in-out 1s slide backwards;
+	}
+
+	@keyframes slide {
+		0% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0);
 		}
 	}
 }

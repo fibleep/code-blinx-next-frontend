@@ -1,25 +1,38 @@
-import bookmarkPlugin from "@notion-render/bookmark-plugin";
-import { NotionRenderer } from "@notion-render/client";
-import hljsPlugin from "@notion-render/hljs-plugin";
-import { fetchPageBlocks, notion } from "../../lib/notion";
-const Post = async ({ post }) => {
+import "@9gustin/react-notion-render/dist/index.css";
+import Link from "next/link";
+
+const Post = async ({ post, index }) => {
 	const id = post.id;
-	const blocks = await fetchPageBlocks(id);
-
-	const renderer = new NotionRenderer({
-		client: notion,
-	});
-
-	renderer.use(hljsPlugin());
-	renderer.use(bookmarkPlugin());
-
-	const html = await renderer.render(...blocks);
-
+	const date = new Date(post.last_edited_time);
+	const isInLast24Hours = (date) => {
+		const now = new Date();
+		const diff = now - date;
+		return diff < 24 * 60 * 60 * 1000;
+	};
+	const delay = {
+		animationDelay: `${index * 0.2}s`,
+	};
 	return (
-		<div className='bg-gradient-to-r from-secondary to-accent rounded-xl p-5 text-background text-xl  min-h-[400px] min-w-[400px] w-full'>
-			<h1 className='text-4xl font-bold text-center'>{html}</h1>
-			<div dangerouslySetInnerHTML={{ __html: html }}></div>
-		</div>
+		<Link
+			href={`/diary/${id}`}
+			style={delay}
+			className=' animate-slide-in bg-gradient-to-r from-secondary to-accent rounded-xl p-5 text-background text-xl w-full cursor-pointer hover:scale-110 transform transition duration-500'>
+			<div className='flex flex-row justify-between items-center'>
+				<h1 className='text-2xl lg:text-4xl font-bold'>
+					{post.properties.Name.title[0].plain_text}
+				</h1>
+				<div className='flex flex-row justify-between items-center space-x-5'>
+					<h1 className='text-xl lg:text-2xl text-gray-800'>{date.toLocaleDateString()}</h1>
+					{isInLast24Hours && (
+						<span class='relative flex ms-0'>
+							<span class='animate-ping absolute inline-flex w-5 h-5 rounded-full bg-green-600 opacity-75'></span>
+							<span class='relative inline-flex rounded-full h-5 w-5 bg-green-500'></span>
+						</span>
+					)}
+				</div>
+			</div>
+			<div className='flex flex-col'></div>
+		</Link>
 	);
 };
 

@@ -7,7 +7,7 @@ const languages = [
 	{ language: "Rust", color: "#CD7F32" }, // Bronze
 	{ language: "TailwindCSS", color: "#06B6D4" }, // Cyan
 	{ language: "Angular", color: "#DD0031" }, // Red
-	{ language: "Objective-C", color: "#438EFF" }, // Deep Blue
+	{ language: "Objective-C (please don't)", color: "#438EFF" }, // Deep Blue
 	{ language: "Node.js", color: "#68A063" }, // Dark Green
 	{ language: "Java", color: "#00CCFF" }, // Blue
 	{ language: "Vue", color: "#4FC08D" }, // Teal
