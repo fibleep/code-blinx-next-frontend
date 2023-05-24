@@ -41,12 +41,16 @@ export default function Home() {
 						<span> In the meantime...</span>
 					</h1>
 					<div className='flex justify-center space-x-5'>
+						<Link href='/diary'>
 						<button className='bg-accent text-background font-bold p-5 text-xl rounded-lg mt-24 hover:shadow-lg hover:scale-110 transform transition duration-500 hover:bg-accent hover:shadow-accent hover:text-background'>
-							<Link href='/diary'>Dev Diary</Link>
+							Dev Diary
 						</button>
+						</Link>
+						<Link href='/about'>
 						<button className='bg-accent text-background font-bold p-5 text-xl rounded-lg mt-24 hover:shadow-lg hover:scale-110 transform transition duration-500 hover:bg-accent hover:shadow-accent hover:text-background'>
-							<Link href='/about'>About Me</Link>
+							About
 						</button>
+						</Link>
 					</div>
 				</div>
 				{/* <div className='flex flex-col justify-center'>
