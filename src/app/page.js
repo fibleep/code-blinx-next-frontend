@@ -27,12 +27,8 @@ export default function Home() {
 					</h2>
 				</div>
 				<div className='flex flex-col'>
-					<button className='bg-accent text-background font-bold p-5 text-3xl rounded-lg mt-24 hover:shadow-lg  mx-auto hover:scale-110 transform transition duration-500 hover:bg-accent hover:shadow-accent hover:text-background'>
-						<a
-							href='https://youtu.be/zsBIuaBO0Qo'
-							target='_blank'>
-							Oooh
-						</a>
+					<button className='bg-accent/50 text-background font-bold p-5 text-3xl rounded-lg mt-24 mx-auto disabled'>
+						Soon...
 					</button>
 					<span className='text-sm text-gray-600 text-center mt-5'>
 						* Available this summer on IOS and Android
