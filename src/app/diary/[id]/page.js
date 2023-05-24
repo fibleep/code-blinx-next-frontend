@@ -5,7 +5,7 @@ const Page = async ({ params }) => {
 	const blocks = await fetchPageBlocks(params.id);
 	return (
 		<>
-			<div className='flex flex-col items-center justify-center w-10/12 lg:w-6/12 mx-auto h-auto my-24 bg-gray-800 text-white p-5 rounded-lg'>
+			<div className='flex flex-col items-center justify-center w-11/12 mx-auto h-auto my-24 bg-gray-800 text-white p-5 rounded-lg'>
 				<div className='flex flex-row justify-content-center p-5 rounded-lg'>
 					<a
 						href='/diary'

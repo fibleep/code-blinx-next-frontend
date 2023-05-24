@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { fetchPages } from "../lib/notion";
 import LoadingPost from "./components/LoadingPost";
 import Post from "./components/Post";
-
+export const revalidate = 1;
 export default async function Page() {
 	const pages = await fetchPages();
 	if (!pages) notFound();

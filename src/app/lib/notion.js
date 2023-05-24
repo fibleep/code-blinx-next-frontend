@@ -1,12 +1,12 @@
 import { Client } from "@notionhq/client";
 
-export const notion = new Client({
-	auth: process.env.NOTION_TOKEN,
-});
+export const fetchPages = async () => {
+	const notion = new Client({
+		auth: process.env.NOTION_TOKEN,
+	});
 
-export const fetchPages = () => {
-	return notion.databases
-		.query({
+	try {
+		const response = await notion.databases.query({
 			database_id: process.env.NOTION_DATABASE_ID,
 			filter: {
 				property: "Status",
@@ -14,13 +14,21 @@ export const fetchPages = () => {
 					equals: "Done",
 				},
 			},
-		})
-		.then((res) => res.results);
+		});
+		return response.results;
+	} catch (error) {
+		console.error("Failed to fetch pages:", error);
+		return [];
+	}
 };
 
-export const fetchPageBySlug = (slug) => {
-	return notion.databases
-		.query({
+export const fetchPageBySlug = async (slug) => {
+	const notion = new Client({
+		auth: process.env.NOTION_TOKEN,
+	});
+
+	try {
+		const response = await notion.databases.query({
 			database_id: process.env.NOTION_DATABASE_ID,
 			filter: {
 				property: "Slug",
@@ -28,10 +36,24 @@ export const fetchPageBySlug = (slug) => {
 					equals: "beginnings",
 				},
 			},
-		})
-		.then((res) => res.results[0] || undefined);
+		});
+		return response.results[0] || undefined;
+	} catch (error) {
+		console.error("Failed to fetch page by slug:", error);
+		return undefined;
+	}
 };
 
-export const fetchPageBlocks = (pageId) => {
-	return notion.blocks.children.list({ block_id: pageId }).then((res) => res.results);
+export const fetchPageBlocks = async (pageId) => {
+	const notion = new Client({
+		auth: process.env.NOTION_TOKEN,
+	});
+
+	try {
+		const response = await notion.blocks.children.list({ block_id: pageId });
+		return response.results;
+	} catch (error) {
+		console.error("Failed to fetch page blocks:", error);
+		return [];
+	}
 };
