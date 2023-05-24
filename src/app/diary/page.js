@@ -9,7 +9,7 @@ export default async function Page() {
 	if (!pages) notFound();
 
 	return (
-		<div className='flex flex-col items-center space-y-12 w-10/12 lg:w-4/12 mx-auto min-h-full py-2 my-24'>
+		<div className='flex flex-col items-center space-y-12 w-10/12 lg:w-6/12 mx-auto min-h-full py-2 my-24'>
 			<Suspense fallback={<LoadingPost></LoadingPost>}>
 				{pages.map((post, index) => (
 						<Post

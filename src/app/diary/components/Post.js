@@ -12,6 +12,7 @@ const Post = async ({ post, index }) => {
 	const delay = {
 		animationDelay: `${index * 0.2}s`,
 	};
+	const test = isInLast24Hours(date);
 	return (
 		<Link
 			href={`/diary/${id}`}
@@ -22,13 +23,13 @@ const Post = async ({ post, index }) => {
 					{post.properties.Name.title[0].plain_text}
 				</h1>
 				<div className='flex flex-row justify-between items-center space-x-5'>
-					<h1 className='text-xl lg:text-2xl text-gray-800'>{date.toLocaleDateString()}</h1>
-					{isInLast24Hours && (
-						<span class='relative flex ms-0'>
-							<span class='animate-ping absolute inline-flex w-5 h-5 rounded-full bg-green-600 opacity-75'></span>
-							<span class='relative inline-flex rounded-full h-5 w-5 bg-green-500'></span>
+					{isInLast24Hours(date) && (
+						<span className='relative flex ms-0'>
+							<span className='animate-ping absolute inline-flex w-5 h-5 rounded-full bg-green-600 opacity-75'></span>
+							<span className='relative inline-flex rounded-full h-5 w-5 bg-green-500'></span>
 						</span>
 					)}
+					<h1 className='text-xl lg:text-2xl text-gray-800'>{date.toLocaleDateString()}</h1>
 				</div>
 			</div>
 			<div className='flex flex-col'></div>
