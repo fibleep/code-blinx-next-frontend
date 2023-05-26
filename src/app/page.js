@@ -27,7 +27,7 @@ export default function Home() {
 					</h2>
 				</div>
 				<div className='flex flex-col'>
-					<button className='bg-accent/50 text-background font-bold p-5 text-3xl rounded-lg mt-24 mx-auto disabled'>
+					<button className='text-accent font-bold p-5 text-3xl rounded-full mt-24 mx-auto disabled border-2 border-accent'>
 						Soon...
 					</button>
 					<span className='text-sm text-gray-600 text-center mt-5'>
@@ -43,12 +43,12 @@ export default function Home() {
 					<div className='flex justify-center space-x-5'>
 						<Link
 							href='/diary'
-							className='bg-accent text-background font-bold p-5 text-xl rounded-lg mt-24 hover:shadow-lg hover:scale-110 transform transition duration-500 hover:bg-accent hover:shadow-accent hover:text-background'>
+							className='bg-accent text-background font-bold p-5 text-xl rounded-full mt-24 hover:shadow-lg hover:scale-110 transform transition duration-500 hover:bg-accent hover:shadow-accent hover:text-background'>
 							Dev Diary
 						</Link>
 						<Link
 							href='/about'
-							className='bg-accent text-background font-bold p-5 text-xl rounded-lg mt-24 hover:shadow-lg hover:scale-110 transform transition duration-500 hover:bg-accent hover:shadow-accent hover:text-background'>
+							className='bg-accent text-background font-bold p-5 text-xl rounded-full mt-24 hover:shadow-lg hover:scale-110 transform transition duration-500 hover:bg-accent hover:shadow-accent hover:text-background'>
 							About
 						</Link>
 					</div>
