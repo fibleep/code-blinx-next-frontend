@@ -1,3 +1,4 @@
+'use server-only';
 import { Client } from "@notionhq/client";
 
 export const fetchPages = async () => {
