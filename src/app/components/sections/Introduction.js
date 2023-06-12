@@ -22,7 +22,7 @@ const Introduction = () => {
 		},
 	};
 	return (
-		<div className='flex justify-center flex-col md:flex-row lg:w-10/12 mx-auto h-screen'>
+		<div className='flex justify-center flex-col lg:flex-row lg:w-10/12 mx-auto h-screen'>
 			<div className='flex flex-col'>
 				<Image
 					src={Iphone}
@@ -45,7 +45,7 @@ const Introduction = () => {
 				</motion.div>
 			</div>
 			<div className='flex flex-col mx-auto mt-5 w-10/12'>
-				<h1 className='text-2xl md:text-6xl text-gray-400 font-bold md:text-left'>
+				<h1 className='text-4xl lg:text-8xl text-gray-400 font-bold lg:text-left'>
 					<span>
 						{" "}
 						<span className='text-transparent bg-clip-text bg-gradient-to-r from-tertiary to-secondary'>
@@ -53,7 +53,7 @@ const Introduction = () => {
 						</span>
 					</span>
 				</h1>
-				<span className='text-gray-400 text-left lg:text-3xl md:mt-24 md:w-6/12 mx-auto md:mx-0'>
+				<span className='text-gray-400 text-left text-2xl lg:text-4xl lg:mt-24 lg:w-6/12 mx-auto lg:mx-0'>
 					Latest documentation, concepts and tutorials for the most popular programming languages
 					and frameworks. <strong> All in one place.</strong>
 				</span>
