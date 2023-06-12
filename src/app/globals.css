@@ -15,6 +15,7 @@
 	*::-webkit-scrollbar-thumb {
 		background-color: #1473c1;
 	}
+
 }
 
 @layer components {
