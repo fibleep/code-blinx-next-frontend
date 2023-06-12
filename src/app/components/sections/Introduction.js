@@ -44,8 +44,8 @@ const Introduction = () => {
 					/>
 				</motion.div>
 			</div>
-			<div className='flex flex-col w-6/12 mx-auto'>
-				<h1 className='text-2xl md:text-6xl text-gray-400 font-bold text-center md:text-left'>
+			<div className='flex flex-col mx-auto mt-5 w-10/12'>
+				<h1 className='text-2xl md:text-6xl text-gray-400 font-bold md:text-left'>
 					<span>
 						{" "}
 						<span className='text-transparent bg-clip-text bg-gradient-to-r from-tertiary to-secondary'>
@@ -53,7 +53,7 @@ const Introduction = () => {
 						</span>
 					</span>
 				</h1>
-				<span className='text-gray-400 text-left lg:text-3xl md:mt-24 md:w-6/12 w-10/12 mx-auto md:mx-0'>
+				<span className='text-gray-400 text-left lg:text-3xl md:mt-24 md:w-6/12 mx-auto md:mx-0'>
 					Latest documentation, concepts and tutorials for the most popular programming languages
 					and frameworks. <strong> All in one place.</strong>
 				</span>

@@ -4,8 +4,6 @@ import Star from "../svg/Star";
 import FeatureCard from "./FeatureCard";
 const Features = () => {
 	return (
-		<>
-			<div className='h-screen'/>
 		<div className='flex justify-center flex-col md:flex-row mx-24 space-y-12 lg:space-y-0 lg:space-x-12 h-screen'>
 			<FeatureCard
 				image={
@@ -45,7 +43,6 @@ const Features = () => {
 				text='MASTER'
 			/>
 		</div>
-				</>
 	);
 };
 

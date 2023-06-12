@@ -18,16 +18,14 @@ const Notifications = () => {
 		},
 	};
 	return (
-        <>
-            <div className='h-screen'/>
-		<div className='flex flex-col h-screen'>
+		<div className='flex flex-col h-screen mt-24 w-10/12 mx-auto'>
 			<motion.div
 				ref={ref}
 				initial='hidden'
 				animate={inView ? "show" : "hidden"}
 				variants={variants}
 				className='flex flex-col justify-center mx-auto mt-5'>
-				<div className='bg-gradient-to-r from-secondary to-accent rounded-xl p-8 text-background text-xl flex flex-row space-x-24'>
+				<div className='bg-gradient-to-r from-secondary to-accent rounded-xl p-2 text-background text-xl flex flex-row space-x-12 w-10/12 mx-auto'>
 					<span className='relative flex ms-0'>
 						<span className='animate-ping absolute inline-flex w-5 h-5 rounded-full bg-green-600 opacity-75'></span>
 						<span className='relative inline-flex rounded-full h-5 w-5 bg-green-500'></span>
@@ -46,15 +44,11 @@ const Notifications = () => {
 					Notifications
 				</span>
 				<span className='text-2xl lg:text-4xl text-gray-400 mt-5'>
-					Notifications are a great way to keep your mind sharp and learn new things.
-				</span>
-				<span className='text-xl lg:text-2xl text-gray-400 mt-5'>
 					Personalized notifications let you keep learning throughout the day and make sure that
 					your mind stays sharp.
 				</span>
 			</div>
 		</div>
-        </>
 	);
 };
 
