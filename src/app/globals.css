@@ -16,6 +16,71 @@
 		background-color: #1473c1;
 	}
 
+	.animate-like {
+		animation: 4s ease-in-out 1s like infinite;
+	}
+	.animate-card {
+		animation: 4s ease-in-out 2s swipe backwards infinite;
+	}
+	.animate-star {
+		animation: 4s ease-in-out 1s appear infinite;
+	}
+
+	@keyframes appear {
+		0% {
+			opacity: 0.4;
+			transform: scale(0.2);
+		}
+		50% {
+			opacity: 1;
+			transform: scale(1);
+		}
+		100% {
+			opacity: 0.4;
+			transform: scale(0.2);
+		}
+		
+	}
+
+	@keyframes like {
+		0% {
+			fill: gray;
+		}
+		50% {
+			fill: red;
+			transform: scale(1.2);
+		}
+		100% {
+			fill: gray;
+		}
+	}
+
+	@keyframes swipe {
+		0% {
+			opacity: 0;
+			transform: translateX(0) translateY(0);
+		}
+		20% {
+			opacity: 1;
+			transform: translateX(0) translateY(0);
+		}
+		40% {
+			opacity: 0;
+			transform: translateX(200%) translateY(20px);
+		}
+		60% {
+			opacity: 0;
+			transform: translateX(0) translateY(0);
+		}
+		80% {
+			opacity: 1;
+			transform: translateX(0) translateY(0);
+		}
+		100% {
+			opacity: 0;
+			transform: translateX(-100%) translateY(20px);
+		}
+	}
 }
 
 @layer components {

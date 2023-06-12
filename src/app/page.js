@@ -1,13 +1,9 @@
 "use client";
-import { motion } from "framer-motion";
-import Image from "next/image";
-import { useInView } from "react-intersection-observer";
-import Codeblinx from "../../public/codeblinx_logo.svg";
-import Iphone from "../../public/iphone.png";
 import languages from "./components/const/languages";
-import useTypewriter from "./components/style/useTypewriter";
-import Introduction from "./components/sections/Introduction";
 import Features from "./components/sections/Features";
+import Introduction from "./components/sections/Introduction";
+import Notifications from "./components/sections/Notifications";
+import useTypewriter from "./components/style/useTypewriter";
 export default function Home() {
 	const [langText, langColor] = useTypewriter(languages);
 	return (
@@ -42,8 +38,9 @@ export default function Home() {
 				</div>
 			</div>
 			<div className='flex justify-center flex-col'>
-			<Introduction />
-			<Features />
+				<Introduction />
+				<Features />
+				<Notifications />
 			</div>
 		</div>
 	);
