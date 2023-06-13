@@ -53,7 +53,7 @@ const Introduction = () => {
 						</span>
 					</span>
 				</h1>
-				<span className='text-gray-400 text-left text-2xl lg:mt-24 lg:w-6/12 mx-auto lg:mx-0'>
+				<span className='text-gray-400 text-left text-2xl lg:mt-24 lg:w-10/12 mx-auto lg:mx-0'>
 					Latest documentation, concepts and tutorials for the most popular programming languages
 					and frameworks. <strong> All in one place.</strong>
 				</span>

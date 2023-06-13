@@ -9,7 +9,6 @@ const Features = () => {
 				image={
 					<Heart
 						className='animate-like lg:w-[150px] lg:h-[150px] w-[100px] h-[100px] '
-						fill='gray'
 					/>
 				}
 				description="Save the topics you're interested in, access them faster and curate your notifications."
