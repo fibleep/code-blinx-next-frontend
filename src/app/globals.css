@@ -28,16 +28,13 @@
 
 	@keyframes appear {
 		0% {
-			opacity: 0.4;
-			transform: scale(0.2);
+			transform: scale(0.9);
 		}
 		50% {
-			opacity: 1;
 			transform: scale(1);
 		}
 		100% {
-			opacity: 0.4;
-			transform: scale(0.2);
+			transform: scale(0.9);
 		}
 		
 	}
@@ -48,7 +45,6 @@
 		}
 		50% {
 			fill: red;
-			transform: scale(1.2);
 		}
 		100% {
 			fill: gray;
