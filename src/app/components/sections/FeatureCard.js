@@ -17,7 +17,7 @@ const FeatureCard = ({ image, text, description }, props) => {
 							{text}
 						</span>
 					</div>
-					<div className='h-2/6'>
+					<div className='h-2/6 mx-auto'>
 						<span className='text-gray-400 text-left text-md w-10/12 mx-auto'>{description}</span>
 					</div>
 				</div>

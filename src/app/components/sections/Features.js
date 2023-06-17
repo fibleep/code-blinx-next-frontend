@@ -28,16 +28,13 @@ const Features = () => {
 				image={
 					<>
 						<Star
-							className='animate-star mx-1 lg:w-[100px] lg:h-[100px] w-[50px] h-[50px] '
-							fill='gray'
+							className='animate-star mx-1 lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]'
 						/>
 						<Star
 							className='animate-star mx-1 lg:w-[100px] lg:h-[100px] w-[50px] h-[50px] '
-							fill='gray'
 						/>
 						<Star
 							className='animate-star mx-1 lg:w-[100px] lg:h-[100px] w-[50px] h-[50px] '
-							fill='gray'
 							/>
 					</>
 				}

@@ -40,13 +40,13 @@
 
 	@keyframes like {
 		0% {
-			fill: black;
+			fill: rgb(31 41 55);
 		}
 		50% {
 			fill: rgb(245, 87, 87);
 		}
 		100% {
-			fill: black;
+			fill: rgb(31 41 55);
 		}
 	}
 

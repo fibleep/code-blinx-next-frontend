@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import Codeblinx from "../../../../public/codeblinx_logo.svg";
 import Iphone from "../../../../public/iphone.png";
+import BackgroundBlur from "../style/BackgroundBlur";
 
 const Introduction = () => {
 	const { ref, inView } = useInView({
@@ -23,6 +24,7 @@ const Introduction = () => {
 	};
 	return (
 		<div className='flex justify-center flex-col lg:flex-row lg:w-10/12 mx-auto h-screen'>
+			<BackgroundBlur className='absolute right-1/2 top-1/2 w-96' />
 			<div className='flex flex-col'>
 				<Image
 					src={Iphone}

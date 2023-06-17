@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
+import BackgroundBlur from "../style/BackgroundBlur";
 const Notifications = () => {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
@@ -47,6 +47,7 @@ const Notifications = () => {
 					Personalized notifications let you keep learning throughout the day and make sure that
 					your mind stays sharp.
 				</span>
+				<BackgroundBlur className='absolute right-10' />
 			</div>
 		</div>
 	);
