@@ -8,7 +8,7 @@ const Features = () => {
 			<FeatureCard
 				image={
 					<Heart
-						className='animate-like lg:w-[150px] lg:h-[150px] w-[100px] h-[100px] '
+						className='lg:w-[100px] lg:h-[100px] w-[80px] h-[80px]'
 					/>
 				}
 				description="Save the topics you're interested in, access them faster and curate your notifications."
@@ -17,7 +17,7 @@ const Features = () => {
 			<FeatureCard
 				image={
 					<Card
-					className='animate-card border-4 border-primary/20 rounded-lg bg-slate-900 lg:w-[150px] lg:h-[150px] w-[100px] h-[100px] '
+					className='animate-card border-4 border-primary/20 rounded-lg bg-slate-900 lg:w-[100px] lg:h-[100px] w-[80px] h-[80px] '
 					fill='primary'
 					/>
 				}
@@ -28,13 +28,13 @@ const Features = () => {
 				image={
 					<>
 						<Star
-							className='animate-star mx-1 lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]'
+							className='animate-star mx-1 lg:w-[50px] lg:h-[50px] w-[50px] h-[50px]'
 						/>
 						<Star
-							className='animate-star mx-1 lg:w-[100px] lg:h-[100px] w-[50px] h-[50px] '
+							className='animate-star mx-1 lg:w-[50px] lg:h-[50px] w-[50px] h-[50px] '
 						/>
 						<Star
-							className='animate-star mx-1 lg:w-[100px] lg:h-[100px] w-[50px] h-[50px] '
+							className='animate-star mx-1 lg:w-[50px] lg:h-[50px] w-[50px] h-[50px] '
 							/>
 					</>
 				}

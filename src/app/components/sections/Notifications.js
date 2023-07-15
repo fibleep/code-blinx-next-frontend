@@ -31,7 +31,7 @@ const Notifications = () => {
 						<span className='relative inline-flex rounded-full h-5 w-5 bg-green-500'></span>
 					</span>
 					<div className='flex flex-col justify-between text-sm'>
-						<span className='text-xl font-bold'>Object Oriented Programming - Python</span>
+						<span className='text-lg font-bold'>Object Oriented Programming - Python</span>
 						<span className='text-md text-muted'>
 							In Python we can create classes and objects. Classes are like a blueprint for creating
 							objects...
@@ -39,11 +39,11 @@ const Notifications = () => {
 					</div>
 				</div>
 			</motion.div>
-			<div className='flex flex-col justify-center mx-auto mt-5'>
-				<span className='bg-clip-text bg-gradient-to-r from-tertiary to-secondary font-bold text-transparent text-4xl lg:text-8xl mt-5'>
+			<div className='flex flex-col justify-center mx-auto mt-5 lg:w-6/12'>
+				<span className='bg-clip-text bg-gradient-to-r from-tertiary to-secondary font-bold text-transparent text-4xl lg:text-6xl mt-5'>
 					Notifications
 				</span>
-				<span className='text-2xl lg:text-4xl text-gray-400 mt-5'>
+				<span className='text-xl lg:text-2xl text-gray-400 pr-2'>
 					Personalized notifications let you keep learning throughout the day and make sure that
 					your mind stays sharp.
 				</span>
